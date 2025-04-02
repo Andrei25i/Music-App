@@ -1,0 +1,74 @@
+.song-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.song .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.song .info .title {
+    font-weight: 700;
+    font-size: clamp(12px, 2vw, 16px);
+    transition: color 0.3s ease-in-out;
+}
+
+.song .info .duration {
+    background-color: #414141;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: 600;
+    font-size: clamp(10px, 2vw, 13px);
+}
+
+.song .info div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.song .info .channel-name {
+    font-size: clamp(10px, 2vw, 13px);
+    font-weight: 600;
+}
+  
+.song .thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.song-card .buttons {
+    display: flex;
+    gap: 10px;
+    margin: 0 15px;
+}
+
+.song-card .buttons img {
+    width: 25px;
+}
+
+
+.title.active {
+    color: #F53D3D;
+}
+
+@media only screen and (max-width: 450px) {
+    .song-card .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

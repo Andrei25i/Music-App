@@ -1,0 +1,156 @@
+.player-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+ 
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.current-song {
+    background-color: #414141;
+    padding: 5px 10px;
+    border-radius: 5px;
+    align-self: center;
+    text-align: center;
+    font-size: clamp(13px, 3vw, 16px); 
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.current-song.bounce-up {
+    opacity: 1;
+    transform: translateY(-15%);
+}
+
+.current-song.bounce-down {
+    opacity: 0.4;
+    transform: translateY(15%);
+}
+
+.player {
+    width: 90%;
+    max-width: 850px;
+  
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 20px 15px;
+    
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.player.hide {
+    transform: translateY(100%);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+}
+
+.controls .buttons {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .buttons .button img {
+    width: 35px;
+    height: 35px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: clamp(7px, 3vw, 16px);
+    font-weight: 600;
+}
+
+.progress-bar .time {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.progress-bar .total {
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.progress-bar .current {
+    width: 0;
+    background-color: #F53D3D;
+    border-radius: 10px;
+    height: 10px;
+    border: none;
+
+    transition: width 0.1s ease-in-out;
+}
+
+.button .play-button, 
+.button .queue-button,
+.button .queue-add-button,
+.button .prev-button, 
+.button .next-button,
+.button .loop-button,
+.button .back-button,
+.button .clear-button {
+    padding: 5px;
+    border-radius: 5px;
+    scale: 1;
+    transition: scale 0.3s ease-in-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .button .play-button:hover, 
+    .button .queue-button:hover,
+    .button .queue-add-button:hover,
+    .button .prev-button:hover, 
+    .button .next-button:hover,
+    .button .loop-button:hover,
+    .button .back-button:hover,
+    .button .clear-button:hover {
+        scale: 1.1;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .progress-bar .total {
+        cursor: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .controls {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .controls .buttons img {
+        width: 30px;
+    }
+}
