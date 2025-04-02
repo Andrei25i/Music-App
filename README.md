@@ -56,10 +56,10 @@ npm run dev
 3. Access the localhost address of the project.
 
 ## Screenshots
-![image](https://github.com/user-attachments/assets/87b351b3-aedc-40a4-b5b5-7ee7671f0349)
+![Screenshot 2025-04-02 170519](https://github.com/user-attachments/assets/db68d18e-e647-4bd8-b51e-390b6214cde3)
 
 
-![image](https://github.com/user-attachments/assets/bd2450f9-cc31-4f75-a1ff-73052142d0d4)
+![Screenshot 2025-04-02 171601](https://github.com/user-attachments/assets/aaf8c5c9-b217-4aca-aaad-3ecc62db5dfe)
 
 ## Other Notes
 The YouTube Data API has some limitations regarding the number of API requests made in a day (approximately 100 searches per day).
