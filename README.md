@@ -1,12 +1,70 @@
-# React + Vite
+# Music App
+This is an app I created as a personal project to practice my skills in web development, particularly with React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+While building it, I wanted to get better at front-end development and experiment with some libraries and tools, like Express and the YouTube Data API. It also gave me a chance to dive into things like handling audio playback, creating a music player, building a playlist, and adding search functionality.
 
-Currently, two official plugins are available:
+## Features
+🎧 Music Player
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Song Search
 
-## Expanding the ESLint configuration
+➕ Add songs in a queue
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+⚛️ [React](https://react.dev/) 
+for the frontend
+
+🌐 [Express](https://expressjs.com/) for the backend server
+
+🎵 [Youtube Data API](https://developers.google.com/youtube/v3) for song searching
+
+📦 [@distube/ytdl-core](https://www.npmjs.com/package/@distube/ytdl-core) for extracting the sound source
+
+## Requirements
+1. [Node.js](https://nodejs.org/en)
+2. [A YouTube Data API Key](https://console.cloud.google.com/)
+
+## Installation
+1. Clone the repository
+
+```bash
+git clone https://github.com/Andrei25i/music-app.git
+```
+
+2. Open a terminal in the root of the project and run
+```bash
+npm install
+cd ./backend
+npm install
+```
+
+3. Insert the YouTube API Key in the .env file
+```bash
+VITE_YOUTUBE_API_KEY = "YOUR API KEY HERE"
+```
+
+## Usage
+1. To use the app, first you have to start the backend:
+```bash
+cd ./backend
+node ./server.js
+```
+2. After that, in another terminal, you have to run the frontend:
+```bash
+npm run dev
+```
+3. Access the localhost address of the project.
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/87b351b3-aedc-40a4-b5b5-7ee7671f0349)
+
+
+![image](https://github.com/user-attachments/assets/bd2450f9-cc31-4f75-a1ff-73052142d0d4)
+
+## Other Notes
+The YouTube Data API has some limitations regarding the number of API requests made in a day (approximately 100 searches per day).
+
+## License
+This is a personal project created for learning and practice purposes. 
+
+No explicit license is provided.
