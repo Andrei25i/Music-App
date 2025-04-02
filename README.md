@@ -8,7 +8,7 @@ While building it, I wanted to get better at front-end development and experimen
 
 🔍 Song Search
 
-➕ Add songs in a queue
+➕ Add songs to a queue
 
 ## Technologies Used
 ⚛️ [React](https://react.dev/) 
