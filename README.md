@@ -28,7 +28,7 @@ for the frontend
 1. Clone the repository
 
 ```bash
-git clone https://github.com/Andrei25i/music-app.git
+git clone https://github.com/Andrei25i/Music-App.git
 ```
 
 2. Open a terminal in the root of the project and run
