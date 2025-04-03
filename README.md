@@ -49,7 +49,7 @@ VITE_YOUTUBE_API_KEY = "YOUR API KEY HERE"
 cd ./backend
 node ./server.js
 ```
-2. After that, in another terminal, you have to run the frontend:
+2. After that, in another terminal, you have to start the frontend:
 ```bash
 npm run dev
 ```
