@@ -36,6 +36,7 @@ git clone https://github.com/Andrei25i/Music-App.git
 ```bash
 npm install
 cd ./backend
+npm install
 python -m venv yt_env
 yt_env\Scripts\activate
 pip install yt_dlp
