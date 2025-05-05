@@ -22,7 +22,8 @@ for the frontend
 
 ## Requirements
 1. [Node.js](https://nodejs.org/en)
-2. [A YouTube Data API Key](https://console.cloud.google.com/)
+2. [Python](https://www.python.org/)
+3. [A YouTube Data API Key](https://console.cloud.google.com/)
 
 ## Installation
 1. Clone the repository
@@ -35,7 +36,9 @@ git clone https://github.com/Andrei25i/Music-App.git
 ```bash
 npm install
 cd ./backend
-npm install
+python -m venv yt_env
+yt_env\Scripts\activate
+pip install yt_dlp
 ```
 
 3. Insert the YouTube API Key in the .env file
