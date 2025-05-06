@@ -18,7 +18,7 @@ for the frontend
 
 🎵 [Youtube Data API](https://developers.google.com/youtube/v3) for song searching
 
-📦 [@distube/ytdl-core](https://www.npmjs.com/package/@distube/ytdl-core) for extracting the sound source
+📦 [yt-dlp](https://github.com/yt-dlp/yt-dlp) for extracting the sound source
 
 ## Requirements
 1. [Node.js](https://nodejs.org/en)
